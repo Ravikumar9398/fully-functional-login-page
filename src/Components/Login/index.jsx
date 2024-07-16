@@ -62,7 +62,7 @@ const Login = (props) => {
       // here i am using tailwind css instead of normal plain css
       className=" w-[100vw] h-screen p-5  
     flex flex-col align-center justify-center md:flex-row
-     overflow-auto pt-[120px] md:p-[5%] "
+     overflow-auto pt-11 md:p-[5%] "
     >
       <div className=" img-bg rounded-xl order-1 md:order-0 md:flex-grow-1">
         <div

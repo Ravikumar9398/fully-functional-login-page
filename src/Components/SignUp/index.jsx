@@ -138,7 +138,7 @@ const SignUp = () => {
         className="w-full bg-white pb-9
       flex flex-col  order-0 sm:rounded-t-xl gap-1
       md:order-1 md:flex-grow-0 
-      md:rounded-r-xl pl-9 drop-shadow-xl h-full 
+      md:rounded-r-xl pl-5 drop-shadow-xl h-full  overflow-auto sm:pr-5
       "
       >
         <img
@@ -161,8 +161,8 @@ const SignUp = () => {
           </a>
         </div>
 
-        <div className="flex align-center gap-6">
-          <div className="flex flex-col align-center gap-2">
+        <div className="flex flex-col  gap-1 md:flex-row">
+          <div className="flex flex-col align-center gap-2 ">
             <label
               htmlFor="username"
               className="font-poppins text-sm text-gray-900 font-medium"
@@ -177,8 +177,8 @@ const SignUp = () => {
               placeholder="Please enter your first name"
               className={
                 showErrorFirstName
-                  ? "border-2 border-red-600 rounded-md h-4  outline-none p-4 font-poppins text-sm md:w-[205px] placeholder:text-red-600"
-                  : "border-2 border-gray-200 rounded-md h-4  outline-none p-4 font-poppins text-sm md:w-[205px]"
+                  ? "border-2 border-red-600 rounded-md h-4  outline-none p-4 font-poppins text-sm md:w-[225px] placeholder:text-red-600"
+                  : "border-2 border-gray-200 rounded-md h-4  outline-none p-4 font-poppins text-sm md:w-[225px]"
               }
             />
           </div>
@@ -200,7 +200,7 @@ const SignUp = () => {
           </div>
         </div>
 
-        <div className="flex flex-col align-center gap-2">
+        <div className="flex flex-col  gap-2">
           <label
             htmlFor="email"
             className="font-poppins text-sm text-gray-900 font-medium"
@@ -215,8 +215,8 @@ const SignUp = () => {
             placeholder="Please enter your email"
             className={
               emailError
-                ? "border-2 border-red-600 rounded-md h-4  outline-none p-4 font-poppins text-sm md:w-[205px] placeholder:text-red-600"
-                : "border-2 border-gray-200 rounded-md h-4  outline-none p-4 font-poppins text-sm md:w-[205px]"
+                ? "border-2 border-red-600 rounded-md h-4  outline-none p-4 font-poppins text-sm md:w-[445px] placeholder:text-red-600"
+                : "border-2 border-gray-200 rounded-md h-4  outline-none p-4 font-poppins text-sm md:w-[445px]"
             }
           />
         </div>
@@ -242,7 +242,7 @@ const SignUp = () => {
           />
         </div>
 
-        <div className="flex align-center gap-6 ">
+        <div className="flex flex-col gap-1 md:flex-row">
           <div className="flex flex-col align-center gap-2">
             <label
               htmlFor="city"
@@ -256,7 +256,7 @@ const SignUp = () => {
               onChange={(event) => setCity(event.target.value)}
               placeholder="Please enter your city"
               className="border-2 border-gray-200 
-            rounded-md h-4  outline-none p-4 font-poppins text-sm md:w-[205px]"
+            rounded-md h-4  outline-none p-4 font-poppins text-sm md:w-[220px]"
             />
           </div>
           <div className="flex flex-col align-center gap-2">
@@ -272,7 +272,7 @@ const SignUp = () => {
               onChange={(event) => setZipCode(event.target.value)}
               placeholder="Pin code "
               className="border-2 border-gray-200 
-            rounded-md h-4  outline-none p-4 font-poppins text-sm md:w-[205px]"
+            rounded-md h-4  outline-none p-4 font-poppins text-sm md:w-[225px]"
             />
           </div>
         </div>

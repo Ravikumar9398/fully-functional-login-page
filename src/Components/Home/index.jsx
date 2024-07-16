@@ -43,8 +43,8 @@ const Home = () => {
 
   return (
     //here i am using tailwind css for styling purpose
-    <div className="w-screen h-full overflow-auto flex flex-col ">
-      <nav className="w-full h-6  flex align-center justify-around pt-3 shadow-2xl  ">
+    <div className="w-screen h-screen overflow-auto flex flex-col ">
+      <nav className="w-full h-6  flex align-center justify-around pt-3 shadow-2xl mb-11 md:mb-3 ">
         <img
           src={require("../../images/soyft-logo.png")}
           className="w-33 h-11 object-contains"
